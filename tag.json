@@ -1,0 +1,67 @@
+{
+  "intents": [
+    {
+      "tag": "creation facture",
+      "patterns": {
+        "fr": ["creer facture", "ajouter facture", "inserer facture", "introduire facture"],
+        "en": ["add an invoice", "create an invoice", "insert an invoice", "introduce an invoice"]
+      },
+      "responses": {
+        "fr": ["Pour ajouter une facture, veuillez fournir les informations suivantes : "],
+        "en": ["\nTo create a new invoice:\nStep 1: Log in to the commercial management software.\nStep 2: Click on the 'Invoices' tab.\nStep 3: Select 'New Invoice'.\nStep 4: Fill in the required information (customer, products/services, price).\nStep 5: Save and send the invoice to the customer.\n"]
+      },
+      "context_set": ""
+    },
+    {
+      "tag": "creation client",
+      "patterns": {
+        "fr": ["creer client", "ajouter client", "insérer client", "introduire client"],
+        "en": ["add an client", "create an client", "insert an client", "introduce an client"]
+      },
+      "responses": {
+        "fr": [
+          "Pour ajouter un client, veuillez fournir les informations suivantes : Nom(obligatoire)/ Reference/ Famille/ Forme juridique/ Comptable/ Mode de paiement/ Risque/ Facturation/Encoursautorise/ Regime tva/ Siret/ Numero tva/ Numero r.c.s/ Code ape/ Activite/ Telephone/ Portable/ Email/ Linkedin/ Facebook/ Tarif/ Taux de remise globale/ Taux de remise par ligne/ Affaire"
+        ],
+        "en": [
+          "To add a client, please provide the following information: name, surname, client number, etc. For example: 'Create a client with name, surname, client number, etc.'"
+        ]
+      },
+      "context_set": ""
+    },{
+      "tag": "oui",
+      "patterns": {
+        "fr": ["oui", "bien sûr", "ok", "d'accord"],
+        "en": ["yes", "sure", "okay", "alright"]
+      },
+      "responses": {
+        "fr": ["ok"],
+        "en": []
+      },
+      "context_set": ""
+    },
+    {
+      "tag": "non",
+      "patterns": {
+        "fr": ["non", "pas du tout", "aucunement"],
+        "en": ["no", "not at all"]
+      },
+      "responses": {
+        "fr": [],
+        "en": []
+      },
+      "context_set": ""
+    },{
+      "tag": "confirmer",
+      "patterns": {
+        "fr": ["confirmer","je confirme"],
+        "en": []
+      },
+      "responses": {
+        "fr": [],
+        "en": []
+      },
+      "context_set": ""
+    }
+      ]
+    }
+    
